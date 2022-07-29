@@ -9,23 +9,45 @@
 /* Begin PBXBuildFile section */
 		D930B00B289411EB00A9949D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B00A289411EB00A9949D /* AppDelegate.swift */; };
 		D930B00D289411EB00A9949D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B00C289411EB00A9949D /* SceneDelegate.swift */; };
-		D930B00F289411EB00A9949D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B00E289411EB00A9949D /* ViewController.swift */; };
+		D930B00F289411EB00A9949D /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B00E289411EB00A9949D /* HealthViewController.swift */; };
 		D930B012289411EB00A9949D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D930B010289411EB00A9949D /* Main.storyboard */; };
 		D930B015289411EB00A9949D /* Pulse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D930B013289411EB00A9949D /* Pulse.xcdatamodeld */; };
 		D930B017289411EC00A9949D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D930B016289411EC00A9949D /* Assets.xcassets */; };
 		D930B01A289411EC00A9949D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D930B018289411EC00A9949D /* LaunchScreen.storyboard */; };
+		D930B02B289417B300A9949D /* HealthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B02A289417B300A9949D /* HealthPresenter.swift */; };
+		D930B0352894589100A9949D /* HealthPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B0342894589100A9949D /* HealthPresenterDelegate.swift */; };
+		D930B037289458D200A9949D /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B036289458D200A9949D /* HealthManager.swift */; };
+		D930B03B28945BBB00A9949D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B03A28945BBB00A9949D /* ProfileViewController.swift */; };
+		D930B03D28945BDD00A9949D /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B03C28945BDD00A9949D /* ProfilePresenter.swift */; };
+		D930B03F2894603200A9949D /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B03E2894603200A9949D /* ProfileManager.swift */; };
+		D930B041289460B400A9949D /* ProfilePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B040289460B400A9949D /* ProfilePresenterDelegate.swift */; };
+		D930B0452894647300A9949D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B0442894647300A9949D /* OnboardingViewController.swift */; };
+		D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B0462894649500A9949D /* OnboardingPresenter.swift */; };
+		D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B048289464AE00A9949D /* OnboardingManager.swift */; };
+		D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D930B007289411EB00A9949D /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930B00A289411EB00A9949D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D930B00C289411EB00A9949D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D930B00E289411EB00A9949D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D930B00E289411EB00A9949D /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		D930B011289411EB00A9949D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D930B014289411EB00A9949D /* Pulse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pulse.xcdatamodel; sourceTree = "<group>"; };
 		D930B016289411EC00A9949D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D930B019289411EC00A9949D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D930B01B289411EC00A9949D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D930B02A289417B300A9949D /* HealthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPresenter.swift; sourceTree = "<group>"; };
+		D930B0342894589100A9949D /* HealthPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPresenterDelegate.swift; sourceTree = "<group>"; };
+		D930B036289458D200A9949D /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		D930B03A28945BBB00A9949D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D930B03C28945BDD00A9949D /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		D930B03E2894603200A9949D /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		D930B040289460B400A9949D /* ProfilePresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterDelegate.swift; sourceTree = "<group>"; };
+		D930B0442894647300A9949D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D930B0462894649500A9949D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		D930B048289464AE00A9949D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +80,195 @@
 		D930B009289411EB00A9949D /* Pulse */ = {
 			isa = PBXGroup;
 			children = (
+				D930B0232894140400A9949D /* Sources */,
+				D930B022289413F900A9949D /* Resources */,
+				D930B013289411EB00A9949D /* Pulse.xcdatamodeld */,
+			);
+			path = Pulse;
+			sourceTree = "<group>";
+		};
+		D930B021289413EC00A9949D /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D930B00A289411EB00A9949D /* AppDelegate.swift */,
 				D930B00C289411EB00A9949D /* SceneDelegate.swift */,
-				D930B00E289411EB00A9949D /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D930B022289413F900A9949D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D930B010289411EB00A9949D /* Main.storyboard */,
 				D930B016289411EC00A9949D /* Assets.xcassets */,
 				D930B018289411EC00A9949D /* LaunchScreen.storyboard */,
 				D930B01B289411EC00A9949D /* Info.plist */,
-				D930B013289411EB00A9949D /* Pulse.xcdatamodeld */,
 			);
-			path = Pulse;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D930B0232894140400A9949D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D930B021289413EC00A9949D /* App */,
+				D930B0242894145300A9949D /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D930B0242894145300A9949D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D930B025289415B500A9949D /* Health */,
+				D930B02C2894580900A9949D /* Profile */,
+				D930B02D2894581100A9949D /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D930B025289415B500A9949D /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0322894584F00A9949D /* Model */,
+				D930B026289415C100A9949D /* View */,
+				D930B027289415C800A9949D /* Presenter */,
+				D930B02A289417B300A9949D /* HealthPresenter.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		D930B026289415C100A9949D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0282894160100A9949D /* Protocols */,
+				D930B00E289411EB00A9949D /* HealthViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D930B027289415C800A9949D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0292894160800A9949D /* Protocols */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D930B0282894160100A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0342894589100A9949D /* HealthPresenterDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D930B0292894160800A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B036289458D200A9949D /* HealthManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D930B02C2894580900A9949D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0332894585B00A9949D /* Model */,
+				D930B02E2894582800A9949D /* View */,
+				D930B02F2894582F00A9949D /* Presenter */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D930B02D2894581100A9949D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0302894583C00A9949D /* View */,
+				D930B0312894584300A9949D /* Presenter */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D930B02E2894582800A9949D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D930B03828945B7F00A9949D /* Protocols */,
+				D930B03A28945BBB00A9949D /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D930B02F2894582F00A9949D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D930B03928945B8C00A9949D /* Protocols */,
+				D930B03C28945BDD00A9949D /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D930B0302894583C00A9949D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0422894643A00A9949D /* Protocols */,
+				D930B0442894647300A9949D /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D930B0312894584300A9949D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D930B0432894644500A9949D /* Protocols */,
+				D930B0462894649500A9949D /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D930B0322894584F00A9949D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D930B0332894585B00A9949D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D930B03828945B7F00A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B040289460B400A9949D /* ProfilePresenterDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D930B03928945B8C00A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B03E2894603200A9949D /* ProfileManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D930B0422894643A00A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D930B0432894644500A9949D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D930B048289464AE00A9949D /* OnboardingManager.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +342,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D930B00F289411EB00A9949D /* ViewController.swift in Sources */,
+				D930B02B289417B300A9949D /* HealthPresenter.swift in Sources */,
+				D930B03F2894603200A9949D /* ProfileManager.swift in Sources */,
+				D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */,
+				D930B0352894589100A9949D /* HealthPresenterDelegate.swift in Sources */,
+				D930B00F289411EB00A9949D /* HealthViewController.swift in Sources */,
 				D930B00B289411EB00A9949D /* AppDelegate.swift in Sources */,
+				D930B041289460B400A9949D /* ProfilePresenterDelegate.swift in Sources */,
+				D930B037289458D200A9949D /* HealthManager.swift in Sources */,
+				D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */,
+				D930B0452894647300A9949D /* OnboardingViewController.swift in Sources */,
+				D930B03D28945BDD00A9949D /* ProfilePresenter.swift in Sources */,
 				D930B00D289411EB00A9949D /* SceneDelegate.swift in Sources */,
+				D930B03B28945BBB00A9949D /* ProfileViewController.swift in Sources */,
 				D930B015289411EB00A9949D /* Pulse.xcdatamodeld in Sources */,
+				D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XK82N983EZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pulse/Info.plist;
+				INFOPLIST_FILE = Pulse/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XK82N983EZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pulse/Info.plist;
+				INFOPLIST_FILE = Pulse/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
