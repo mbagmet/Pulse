@@ -22,7 +22,7 @@ class HealthViewController: UIViewController {
         presenter.setViewDelegate(delegate: self)
         
         // MARK: View Setup
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .systemBackground
     }
 }
 

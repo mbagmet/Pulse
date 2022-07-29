@@ -11,16 +11,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // MARK: - TabBarController
+        
+        let tabBarController = UITabBarController()
+        
+        // MARK: - window settings
+        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: HealthViewController())
+        window?.rootViewController = tabBarController
+
+        // MARK: - "Health" tab
+        
+        let healthViewController = HealthViewController()
+        let healthNavigationController = UINavigationController(rootViewController: healthViewController)
+        healthViewController.tabBarItem = UITabBarItem(title: Strings.healthNavigationTitle,
+                                                              image: UIImage(systemName: "heart.fill"),
+                                                              tag: 0)
+
+        // MARK: - "Profile" tab
+        
+        let profileViewController = ProfileViewController()
+        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
+        profileViewController.tabBarItem = UITabBarItem(title: Strings.profileNavigationTitle,
+                                                       image: UIImage(systemName: "person.crop.circle.fill"),
+                                                       tag: 1)
+
+        // MARK: - TabBarController settings
+        
+        tabBarController.setViewControllers([
+            healthNavigationController,
+            profileNavigationController
+        ], animated: true)
+
+        tabBarController.selectedIndex = 0
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,7 +81,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
-
 }
-

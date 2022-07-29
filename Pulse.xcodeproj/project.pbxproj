@@ -25,6 +25,7 @@
 		D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B0462894649500A9949D /* OnboardingPresenter.swift */; };
 		D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B048289464AE00A9949D /* OnboardingManager.swift */; };
 		D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */; };
+		D930B04E289472D800A9949D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D930B0462894649500A9949D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		D930B048289464AE00A9949D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterDelegate.swift; sourceTree = "<group>"; };
+		D930B04D289472D800A9949D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				D930B021289413EC00A9949D /* App */,
 				D930B0242894145300A9949D /* Scenes */,
+				D930B04C289472AD00A9949D /* Constants */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -271,6 +274,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		D930B04C289472AD00A9949D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D930B04D289472D800A9949D /* Strings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +355,7 @@
 			files = (
 				D930B02B289417B300A9949D /* HealthPresenter.swift in Sources */,
 				D930B03F2894603200A9949D /* ProfileManager.swift in Sources */,
+				D930B04E289472D800A9949D /* Strings.swift in Sources */,
 				D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */,
 				D930B0352894589100A9949D /* HealthPresenterDelegate.swift in Sources */,
 				D930B00F289411EB00A9949D /* HealthViewController.swift in Sources */,
