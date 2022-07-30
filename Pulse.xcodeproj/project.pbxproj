@@ -27,6 +27,7 @@
 		D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */; };
 		D930B04E289472D800A9949D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* Strings.swift */; };
 		D96A7A9228953999007D629D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */; };
+		D96A7A98289555CD007D629D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D96A7A97289555CD007D629D /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96A7A98289555CD007D629D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +311,9 @@
 			dependencies = (
 			);
 			name = Pulse;
+			packageProductDependencies = (
+				D96A7A97289555CD007D629D /* SnapKit */,
+			);
 			productName = Pulse;
 			productReference = D930B007289411EB00A9949D /* Pulse.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +342,9 @@
 				Base,
 			);
 			mainGroup = D930AFFE289411EB00A9949D;
+			packageReferences = (
+				D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D930B008289411EB00A9949D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -598,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D96A7A97289555CD007D629D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D930B013289411EB00A9949D /* Pulse.xcdatamodeld */ = {

@@ -41,7 +41,6 @@ extension HealthViewController {
     private func setupNavigation() {
         navigationItem.title = Strings.healthNavigationTitle
         self.navigationController?.navigationBar.prefersLargeTitles = true
-//        navItem.tintColor = .black
         navigationItem.rightBarButtonItem = UIBarButtonItem.menuButton(self, action: #selector(presentSettings), image: UIImage(systemName: "gearshape.fill"))
     }
 }
