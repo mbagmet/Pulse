@@ -21,8 +21,11 @@ class ProfileViewController: UIViewController {
         // MARK: Presenter setup
         presenter.setViewDelegate(delegate: self)
         
+        // MARK: Navigaiton Setup
+        setupNavigation()
+        
         // MARK: View Setup
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = .systemBackground
     }
 }
 
@@ -30,4 +33,13 @@ class ProfileViewController: UIViewController {
 
 extension ProfileViewController: ProfilePresenterDelegate {
     
+}
+
+// MARK: - Navigation
+
+extension ProfileViewController {
+    private func setupNavigation() {
+        navigationItem.title = Strings.profileNavigationTitle
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
 }

@@ -26,6 +26,7 @@
 		D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B048289464AE00A9949D /* OnboardingManager.swift */; };
 		D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */; };
 		D930B04E289472D800A9949D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* Strings.swift */; };
+		D96A7A9228953999007D629D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D930B048289464AE00A9949D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterDelegate.swift; sourceTree = "<group>"; };
 		D930B04D289472D800A9949D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D930B021289413EC00A9949D /* App */,
 				D930B0242894145300A9949D /* Scenes */,
 				D930B04C289472AD00A9949D /* Constants */,
+				D96A7A9028953970007D629D /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -282,6 +285,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		D96A7A9028953970007D629D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +380,7 @@
 				D930B03B28945BBB00A9949D /* ProfileViewController.swift in Sources */,
 				D930B015289411EB00A9949D /* Pulse.xcdatamodeld in Sources */,
 				D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */,
+				D96A7A9228953999007D629D /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

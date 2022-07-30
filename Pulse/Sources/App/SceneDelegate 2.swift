@@ -17,8 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // MARK: - TabBarController
         
         let tabBarController = UITabBarController()
-        tabBarController.tabBar.itemPositioning = .centered
-        tabBarController.tabBar.itemSpacing = 59
         
         // MARK: - window settings
         
