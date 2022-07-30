@@ -28,6 +28,11 @@
 		D930B04E289472D800A9949D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* Strings.swift */; };
 		D96A7A9228953999007D629D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */; };
 		D96A7A98289555CD007D629D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D96A7A97289555CD007D629D /* SnapKit */; };
+		D96A7A9A28955D72007D629D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9928955D72007D629D /* UIColor+Extension.swift */; };
+		D96A7A9D2895D3F5007D629D /* TopPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9C2895D3F5007D629D /* TopPanelView.swift */; };
+		D96A7A9F2895D92A007D629D /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9E2895D92A007D629D /* MeasureView.swift */; };
+		D96A7AA12895D970007D629D /* DailyAdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7AA02895D970007D629D /* DailyAdviceView.swift */; };
+		D96A7AA32895D99A007D629D /* HealthStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,11 @@
 		D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterDelegate.swift; sourceTree = "<group>"; };
 		D930B04D289472D800A9949D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		D96A7A9928955D72007D629D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D96A7A9C2895D3F5007D629D /* TopPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanelView.swift; sourceTree = "<group>"; };
+		D96A7A9E2895D92A007D629D /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		D96A7AA02895D970007D629D /* DailyAdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAdviceView.swift; sourceTree = "<group>"; };
+		D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 			children = (
 				D930B0282894160100A9949D /* Protocols */,
 				D930B00E289411EB00A9949D /* HealthViewController.swift */,
+				D96A7A9B2895D3BD007D629D /* Subviews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,8 +302,20 @@
 			isa = PBXGroup;
 			children = (
 				D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */,
+				D96A7A9928955D72007D629D /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D96A7A9B2895D3BD007D629D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				D96A7A9C2895D3F5007D629D /* TopPanelView.swift */,
+				D96A7A9E2895D92A007D629D /* MeasureView.swift */,
+				D96A7AA02895D970007D629D /* DailyAdviceView.swift */,
+				D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,16 +398,21 @@
 				D930B02B289417B300A9949D /* HealthPresenter.swift in Sources */,
 				D930B03F2894603200A9949D /* ProfileManager.swift in Sources */,
 				D930B04E289472D800A9949D /* Strings.swift in Sources */,
+				D96A7A9A28955D72007D629D /* UIColor+Extension.swift in Sources */,
 				D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */,
 				D930B0352894589100A9949D /* HealthPresenterDelegate.swift in Sources */,
 				D930B00F289411EB00A9949D /* HealthViewController.swift in Sources */,
 				D930B00B289411EB00A9949D /* AppDelegate.swift in Sources */,
+				D96A7A9D2895D3F5007D629D /* TopPanelView.swift in Sources */,
 				D930B041289460B400A9949D /* ProfilePresenterDelegate.swift in Sources */,
 				D930B037289458D200A9949D /* HealthManager.swift in Sources */,
+				D96A7AA32895D99A007D629D /* HealthStatisticsView.swift in Sources */,
 				D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */,
 				D930B0452894647300A9949D /* OnboardingViewController.swift in Sources */,
+				D96A7A9F2895D92A007D629D /* MeasureView.swift in Sources */,
 				D930B03D28945BDD00A9949D /* ProfilePresenter.swift in Sources */,
 				D930B00D289411EB00A9949D /* SceneDelegate.swift in Sources */,
+				D96A7AA12895D970007D629D /* DailyAdviceView.swift in Sources */,
 				D930B03B28945BBB00A9949D /* ProfileViewController.swift in Sources */,
 				D930B015289411EB00A9949D /* Pulse.xcdatamodeld in Sources */,
 				D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */,
