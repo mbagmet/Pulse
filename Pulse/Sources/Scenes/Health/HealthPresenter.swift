@@ -18,4 +18,16 @@ class HealthPresenter: HealthManager {
     func setViewDelegate(delegate: HealthPresenterDelegate) {
         self.delegate = delegate
     }
+    
+    func configureView() {
+        guard let advice = getAdvice() else { return }
+        delegate?.showAdvice(advice: advice)
+    }
+    
+    // MARK: - Private functions
+    
+    private func getAdvice() -> DailyAdvice? {
+        guard let advices = DailyAdviceModel.createModel() else { return nil }
+        return advices.last
+    }
 }

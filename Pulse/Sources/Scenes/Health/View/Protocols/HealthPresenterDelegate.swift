@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HealthPresenterDelegate: AnyObject {
-    
+    func showAdvice(advice: DailyAdvice)
 }

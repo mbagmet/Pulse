@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let healthViewController = HealthViewController()
         let healthNavigationController = UINavigationController(rootViewController: healthViewController)
-        healthViewController.tabBarItem = UITabBarItem(title: Strings.healthNavigationTitle,
+        healthViewController.tabBarItem = UITabBarItem(title: CommonStrings.healthNavigationTitle,
                                                               image: UIImage(systemName: "heart.fill"),
                                                               tag: 0)
 
@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let profileViewController = ProfileViewController()
         let profileNavigationController = UINavigationController(rootViewController: profileViewController)
-        profileViewController.tabBarItem = UITabBarItem(title: Strings.profileNavigationTitle,
+        profileViewController.tabBarItem = UITabBarItem(title: CommonStrings.profileNavigationTitle,
                                                        image: UIImage(systemName: "person.crop.circle.fill"),
                                                        tag: 1)
 

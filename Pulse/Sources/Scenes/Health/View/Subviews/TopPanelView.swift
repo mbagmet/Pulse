@@ -12,15 +12,7 @@ class TopPanelView: UIView {
     
     // MARK: - Views
 
-    private lazy var topPanelStackView: UIStackView = {
-        let stackView = UIStackView()
-
-        stackView.axis = .horizontal
-        stackView.distribution = .fill
-        stackView.spacing = 5
-
-        return stackView
-    }()
+    private lazy var topPanelStackView = UIStackView.createStackView(axis: .horizontal, distribution: .fill, spacing: Metrics.topPanelStackViewSpacing)
 
     private lazy var bloodPressureButton = createButton(title: "Blood pressure", imageName: "blood", tintColor: UIColor(named: "IconGreen"))
     private lazy var oxygenButton = createButton(title: "Oxygen", imageName: "oxygen", tintColor: UIColor(named: "IconBlue"))
@@ -51,7 +43,7 @@ class TopPanelView: UIView {
         
         self.clipsToBounds = true
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 23
+        self.layer.cornerRadius = Metrics.topPanelCornerRadius
     }
     
     private func setupHierarchy() {
@@ -64,11 +56,14 @@ class TopPanelView: UIView {
 
     private func setupLayout() {
         self.snp.makeConstraints { make in
-            make.height.equalTo(82)
+            make.height.equalTo(Metrics.topPanelHeight)
         }
         
         topPanelStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: CommonMetrics.lightGrayPanelsInset,
+                                                             left: CommonMetrics.lightGrayPanelsInset,
+                                                             bottom: CommonMetrics.lightGrayPanelsInset,
+                                                             right: CommonMetrics.lightGrayPanelsInset))
         }
     }
     
@@ -76,12 +71,15 @@ class TopPanelView: UIView {
     
     private func createButton(title: String, imageName: String, tintColor: UIColor?) -> UIButton {
         var container = AttributeContainer()
-        container.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        container.font = Metrics.topPanelFont
         
         var configuration = UIButton.Configuration.filled()
         configuration.attributedTitle = AttributedString(title, attributes: container)
         configuration.titleAlignment = .center
-        configuration.contentInsets = NSDirectionalEdgeInsets(top: 11, leading: 5, bottom: 18, trailing: 5)
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: Metrics.topPanelItemTopInset,
+                                                              leading: Metrics.topPanelItemHorizontalInset,
+                                                              bottom: Metrics.topPanelItemBottomInset,
+                                                              trailing: Metrics.topPanelItemHorizontalInset)
         
         configuration.image = UIImage(named: imageName)
         configuration.imagePlacement = .top
@@ -89,16 +87,35 @@ class TopPanelView: UIView {
         
         configuration.baseBackgroundColor = .white
         configuration.baseForegroundColor = tintColor
-        configuration.background.cornerRadius = 16
+        configuration.background.cornerRadius = Metrics.topPanelItemCornerRadius
         
         let button = UIButton(configuration: configuration, primaryAction: nil)
         button.imageView?.snp.makeConstraints { make in
-            make.top.equalTo(11)
+            make.top.equalTo(Metrics.topPanelItemTopInset)
             make.centerX.equalToSuperview()
-            make.height.equalTo(28)
-            make.width.equalTo(28)
+            make.height.equalTo(CommonMetrics.smallIconSize)
+            make.width.equalTo(CommonMetrics.smallIconSize)
         }
         
         return button
+    }
+}
+
+// MARK: - Constatnts
+
+extension TopPanelView {
+    enum Metrics {
+        static let topPanelStackViewSpacing: CGFloat = 5
+        
+        static let topPanelHeight: CGFloat = 82
+        static let topPanelCornerRadius: CGFloat = 23
+        
+        static let topPanelItemCornerRadius: CGFloat = 16
+        
+        static let topPanelItemTopInset: CGFloat = 11
+        static let topPanelItemHorizontalInset: CGFloat = 5
+        static let topPanelItemBottomInset: CGFloat = 18
+        
+        static let topPanelFont: UIFont = UIFont.systemFont(ofSize: 12, weight: .medium)
     }
 }
