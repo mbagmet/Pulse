@@ -11,4 +11,5 @@ protocol HealthManager {
     var delegate: HealthPresenterDelegate? { get set }
     
     func setViewDelegate(delegate: HealthPresenterDelegate)
+    func configureView()
 }

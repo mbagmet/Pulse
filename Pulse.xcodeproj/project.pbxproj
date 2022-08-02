@@ -25,8 +25,19 @@
 		D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B0462894649500A9949D /* OnboardingPresenter.swift */; };
 		D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B048289464AE00A9949D /* OnboardingManager.swift */; };
 		D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */; };
-		D930B04E289472D800A9949D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* Strings.swift */; };
+		D930B04E289472D800A9949D /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930B04D289472D800A9949D /* CommonStrings.swift */; };
+		D94A8FD828999E58009D1F87 /* CommonMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A8FD728999E58009D1F87 /* CommonMetrics.swift */; };
 		D96A7A9228953999007D629D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */; };
+		D96A7A98289555CD007D629D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D96A7A97289555CD007D629D /* SnapKit */; };
+		D96A7A9A28955D72007D629D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9928955D72007D629D /* UIColor+Extension.swift */; };
+		D96A7A9D2895D3F5007D629D /* TopPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9C2895D3F5007D629D /* TopPanelView.swift */; };
+		D96A7A9F2895D92A007D629D /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7A9E2895D92A007D629D /* MeasureView.swift */; };
+		D96A7AA12895D970007D629D /* DailyAdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7AA02895D970007D629D /* DailyAdviceView.swift */; };
+		D96A7AA32895D99A007D629D /* HealthStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */; };
+		D96A7AA82895DF02007D629D /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A7AA72895DF02007D629D /* UIStackView+Extension.swift */; };
+		D9B3A3EF289609FA00F5CD75 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3A3EE289609FA00F5CD75 /* NSAttributedString+Extension.swift */; };
+		D9B3A3F1289611B000F5CD75 /* DailyAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3A3F0289611B000F5CD75 /* DailyAdvice.swift */; };
+		D9B3A3F3289611DB00F5CD75 /* DailyAdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3A3F2289611DB00F5CD75 /* DailyAdviceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +61,18 @@
 		D930B0462894649500A9949D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		D930B048289464AE00A9949D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		D930B04A2894651100A9949D /* OnboardingPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterDelegate.swift; sourceTree = "<group>"; };
-		D930B04D289472D800A9949D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D930B04D289472D800A9949D /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
+		D94A8FD728999E58009D1F87 /* CommonMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMetrics.swift; sourceTree = "<group>"; };
 		D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		D96A7A9928955D72007D629D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D96A7A9C2895D3F5007D629D /* TopPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanelView.swift; sourceTree = "<group>"; };
+		D96A7A9E2895D92A007D629D /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		D96A7AA02895D970007D629D /* DailyAdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAdviceView.swift; sourceTree = "<group>"; };
+		D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatisticsView.swift; sourceTree = "<group>"; };
+		D96A7AA72895DF02007D629D /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		D9B3A3EE289609FA00F5CD75 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		D9B3A3F0289611B000F5CD75 /* DailyAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAdvice.swift; sourceTree = "<group>"; };
+		D9B3A3F2289611DB00F5CD75 /* DailyAdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAdviceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96A7A98289555CD007D629D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +139,7 @@
 				D930B021289413EC00A9949D /* App */,
 				D930B0242894145300A9949D /* Scenes */,
 				D930B04C289472AD00A9949D /* Constants */,
+				D96A7AA42895DE55007D629D /* Helpers */,
 				D96A7A9028953970007D629D /* Extensions */,
 			);
 			path = Sources;
@@ -148,6 +171,7 @@
 			children = (
 				D930B0282894160100A9949D /* Protocols */,
 				D930B00E289411EB00A9949D /* HealthViewController.swift */,
+				D96A7A9B2895D3BD007D629D /* Subviews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +258,8 @@
 		D930B0322894584F00A9949D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9B3A3F0289611B000F5CD75 /* DailyAdvice.swift */,
+				D9B3A3F2289611DB00F5CD75 /* DailyAdviceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,7 +306,8 @@
 		D930B04C289472AD00A9949D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				D930B04D289472D800A9949D /* Strings.swift */,
+				D930B04D289472D800A9949D /* CommonStrings.swift */,
+				D94A8FD728999E58009D1F87 /* CommonMetrics.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -289,8 +316,29 @@
 			isa = PBXGroup;
 			children = (
 				D96A7A9128953999007D629D /* UIBarButtonItem+Extension.swift */,
+				D96A7A9928955D72007D629D /* UIColor+Extension.swift */,
+				D96A7AA72895DF02007D629D /* UIStackView+Extension.swift */,
+				D9B3A3EE289609FA00F5CD75 /* NSAttributedString+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D96A7A9B2895D3BD007D629D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				D96A7A9C2895D3F5007D629D /* TopPanelView.swift */,
+				D96A7A9E2895D92A007D629D /* MeasureView.swift */,
+				D96A7AA02895D970007D629D /* DailyAdviceView.swift */,
+				D96A7AA22895D99A007D629D /* HealthStatisticsView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		D96A7AA42895DE55007D629D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +357,9 @@
 			dependencies = (
 			);
 			name = Pulse;
+			packageProductDependencies = (
+				D96A7A97289555CD007D629D /* SnapKit */,
+			);
 			productName = Pulse;
 			productReference = D930B007289411EB00A9949D /* Pulse.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +388,9 @@
 				Base,
 			);
 			mainGroup = D930AFFE289411EB00A9949D;
+			packageReferences = (
+				D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D930B008289411EB00A9949D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,17 +420,27 @@
 			files = (
 				D930B02B289417B300A9949D /* HealthPresenter.swift in Sources */,
 				D930B03F2894603200A9949D /* ProfileManager.swift in Sources */,
-				D930B04E289472D800A9949D /* Strings.swift in Sources */,
+				D930B04E289472D800A9949D /* CommonStrings.swift in Sources */,
+				D96A7AA82895DF02007D629D /* UIStackView+Extension.swift in Sources */,
+				D94A8FD828999E58009D1F87 /* CommonMetrics.swift in Sources */,
+				D96A7A9A28955D72007D629D /* UIColor+Extension.swift in Sources */,
 				D930B049289464AE00A9949D /* OnboardingManager.swift in Sources */,
 				D930B0352894589100A9949D /* HealthPresenterDelegate.swift in Sources */,
 				D930B00F289411EB00A9949D /* HealthViewController.swift in Sources */,
 				D930B00B289411EB00A9949D /* AppDelegate.swift in Sources */,
+				D9B3A3EF289609FA00F5CD75 /* NSAttributedString+Extension.swift in Sources */,
+				D96A7A9D2895D3F5007D629D /* TopPanelView.swift in Sources */,
+				D9B3A3F3289611DB00F5CD75 /* DailyAdviceModel.swift in Sources */,
 				D930B041289460B400A9949D /* ProfilePresenterDelegate.swift in Sources */,
+				D9B3A3F1289611B000F5CD75 /* DailyAdvice.swift in Sources */,
 				D930B037289458D200A9949D /* HealthManager.swift in Sources */,
+				D96A7AA32895D99A007D629D /* HealthStatisticsView.swift in Sources */,
 				D930B0472894649500A9949D /* OnboardingPresenter.swift in Sources */,
 				D930B0452894647300A9949D /* OnboardingViewController.swift in Sources */,
+				D96A7A9F2895D92A007D629D /* MeasureView.swift in Sources */,
 				D930B03D28945BDD00A9949D /* ProfilePresenter.swift in Sources */,
 				D930B00D289411EB00A9949D /* SceneDelegate.swift in Sources */,
+				D96A7AA12895D970007D629D /* DailyAdviceView.swift in Sources */,
 				D930B03B28945BBB00A9949D /* ProfileViewController.swift in Sources */,
 				D930B015289411EB00A9949D /* Pulse.xcdatamodeld in Sources */,
 				D930B04B2894651100A9949D /* OnboardingPresenterDelegate.swift in Sources */,
@@ -598,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D96A7A97289555CD007D629D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D96A7A96289555CD007D629D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D930B013289411EB00A9949D /* Pulse.xcdatamodeld */ = {

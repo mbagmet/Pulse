@@ -39,7 +39,7 @@ extension ProfileViewController: ProfilePresenterDelegate {
 
 extension ProfileViewController {
     private func setupNavigation() {
-        navigationItem.title = Strings.profileNavigationTitle
+        navigationItem.title = CommonStrings.profileNavigationTitle
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
